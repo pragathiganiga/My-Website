@@ -26,8 +26,9 @@ This project is a personal portfolio website designed to showcase my skills, exp
 4. **Projects:** Key projects I've worked on.
 5. **Contact:** Links to my social media profiles.
 
-##Future Enhancements
-**Blog Section:** Plan to add a blog for sharing insights on software development.
-**Additional Animations:** Refining animations to further enhance user experience.
+## Website Link
+
+You can visit the live website here: [My Website](https://my-projectt.netlify.app)
+
 
 

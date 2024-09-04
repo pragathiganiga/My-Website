@@ -1,0 +1,350 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient-color: linear-gradient(rgb(230,16,201), #fdba02); 
+    --background-color: #0a0a23; 
+    --primary-color: #f28aa9;
+     --dark-blue: #003366;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav bar */
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: var(--background-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.item {
+    display: flex;
+    gap: 1rem;
+}
+
+.item li a {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+    height: 35rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem; /* Add padding for better alignment */
+}
+
+/* Keyframes for animating the hero section */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation to the hero section */
+.animate-hero {
+    animation: fadeInUp 2s ease-out;
+}
+
+.font h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font h4 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: white; 
+    background: none; 
+}
+
+.font h3{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.font h5 {
+    font-weight: bolder;
+    font-family: 'Peddana', serif;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    background: white; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: justify; 
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#about-image {
+    width: 25rem;
+    height: 25rem;
+    animation: fadeIn 4s ease-in;
+}
+
+
+.about-heading {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.about-body {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+    padding-left: 2rem; 
+    animation: fadeIn 4s ease-in;
+
+}
+
+.about-content {
+     padding-right: 3rem;
+    padding-left: 3rem; 
+    animation: fadeIn 4s ease-in;
+}
+
+
+/* Education */
+#education-section {
+    padding: 2rem; 
+    color: var(--dark-blue);
+}
+
+.education-heading {
+    text-align: center; 
+    padding-top: 10rem;
+    padding-bottom: 2rem; 
+    color: var(--dark-blue);
+}
+
+.education {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 5rem;
+    color: var(--dark-blue);
+}
+
+.education-item {
+    background-color: #f4f4f4; 
+    background: none;
+    padding: 1rem; 
+    border-radius: 8px;
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    color: aliceblue ; 
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#education-section {
+    animation: fadeInUp 4s ease-out;
+}
+
+
+/* projects */
+.font1 h4 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color:whitesmoke;
+    font-family: 'Peddana', serif;
+}
+.project-img {
+    width: 30rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.project-heading {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.project-1 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 5rem;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+   
+}
+
+.project-2 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 5rem;
+    justify-content: space-between;
+    padding-left: 3rem;
+}
+
+.project-3 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 5rem;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.font h4 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: white; 
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.project-1, .project-3 {
+    animation: slideInLeft 4s ease-out;
+}
+
+
+.project-2 {
+    animation: slideInRight 4s ease-out;
+}
+
+
+.project-2 {
+    animation-delay: 0.4s;
+}
+
+.project-3 {
+    animation-delay: 0.6s;
+}
+
+
+
+footer-heading{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footer-body{
+    display: flex;
+    justify-content: center;
+     gap: 20rem;
+    padding-bottom: 10rem;
+     padding: 4rem 0;
+     cursor: pointer;
+}
+
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-30px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#contact {
+    animation: slideInUp 4s ease-out;
+}
+
